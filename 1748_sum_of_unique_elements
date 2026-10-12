@@ -1,0 +1,12 @@
+class Solution:
+    def sumOfUnique(self, nums: list[int]) -> int:
+        freq = {}
+        for num in nums:
+            freq[num] = freq.get(num, 0) + 1
+
+        unique_sum = 0
+        for num, count in freq.items():
+            if count == 1:
+                unique_sum += num
+
+        return unique_sum
