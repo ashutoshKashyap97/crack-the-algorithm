@@ -10,3 +10,7 @@ class Solution:
                 unique_sum += num
 
         return unique_sum
+
+solution = Solution()
+print(solution.sumOfUnique([1, 2, 3, 4, 5]))  # Output: 15
+print(solution.sumOfUnique([1, 2, 3, 2, 4, 5, 4]))  # Output: 9
